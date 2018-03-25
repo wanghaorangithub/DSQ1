@@ -16,7 +16,7 @@ int main()
 	std::cin >> s;
 	std::cout << "m:";
 	std::cin >> m;
-	if (n > s && m > 0 && s > 0) {
+	if (n >= s && m > 0 && s > 0) {
 		solveTheProblemWithArrayList(n, s, m);
 		solveTheProblemWithLinkList(n, s, m);
 	}

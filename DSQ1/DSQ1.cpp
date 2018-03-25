@@ -16,8 +16,12 @@ int main()
 	std::cin >> s;
 	std::cout << "m:";
 	std::cin >> m;
-	solveTheProblemWithArrayList(n, s, m);
-	solveTheProblemWithLinkList(n, s, m);
+	if (n > s && m > 0 && s > 0) {
+		solveTheProblemWithArrayList(n, s, m);
+		solveTheProblemWithLinkList(n, s, m);
+	}
+	else std::cout << "error data";
+
 	return 0;
 }
 void solveTheProblemWithArrayList(int n, int s, int m) {

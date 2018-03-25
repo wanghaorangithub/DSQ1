@@ -32,7 +32,7 @@ public:
 		}
 	}
 	~LinkList() {
-		Link<T>*tmp;
+		Node<T>*tmp;
 		while (head != nullptr) {
 			tmp = head;
 			head = head->next;

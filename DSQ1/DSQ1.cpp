@@ -39,6 +39,7 @@ void solveTheProblemWithArrayList(int n, int s, int m) {
 		position++;
 	}
 	std::cout << std::endl;
+	delete arrayList;
 }
 void solveTheProblemWithLinkList(int n, int s, int m) {
 	int position = 0, result = 0;
@@ -59,4 +60,5 @@ void solveTheProblemWithLinkList(int n, int s, int m) {
 		position++;
 	}
 	std::cout << std::endl;
+	delete linkList;
 }
